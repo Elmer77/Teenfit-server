@@ -1,4 +1,6 @@
-require('dotenv')
+var dotenv = require('dotenv');
+dotenv.load();
+
 module.exports = {
     aws_bucket: process.env.S3_BUCKET,
     aws_key: process.env.AWS_ACCESS_KEY_ID,
