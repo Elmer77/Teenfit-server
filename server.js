@@ -34,4 +34,5 @@ var server = http.createServer(app);
 server.listen(port, function (err) {
   console.log('listening in http://localhost:' + port);
   console.log("env variable: ", process.env);
+  console.log('it is: ', '/aws/files', awsController.listFiles );
 });
